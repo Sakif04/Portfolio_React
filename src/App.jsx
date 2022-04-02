@@ -1,42 +1,37 @@
 
 import Gallery from "./components/Gallery";
 import Home from "./components/Home";
+import Header from "./components/Header";
+import About from "./components/About";
+
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link,
+  Route
 } from "react-router-dom";
-import logo from './logo.svg'
 
 import "./css/tailwind.css"
-import './App.css'
-
 
 
 function App() {
   
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <Router>
-          <Routes>
-            <Route path="../" element={<Home />} />
-            <Route path="gallery" element={<Gallery />} />
-          </Routes>
-          <Link to="gallery">Gallery</Link>
-          <Link to="../" >Home </Link>
-        </Router>
-
-
-       
-
-        <h1 className='bg-red-600 text-2xl text-pink-200'> Hello Vite + React! </h1>
+    <div className="app-body">
+      <div className="App-header z-10 font-sans ">
     
-      </header>
+        <Router>
+        <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="gallery" element={<Gallery />} />
+            <Route path="about" element={<About />} />
+          </Routes>
+         </Router>
+    
+        
+    
+      </div>
     </div>
   )
 }
