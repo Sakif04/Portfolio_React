@@ -1,6 +1,6 @@
 import {BsHouseDoor} from "react-icons/bs";
-import {BsFillPersonFill} from "react-icons/bs";
-import {FcFlashOn} from "react-icons/fc";
+import {BsFillPersonFill} from "react-icons/bs";import {FcFlashOn} from "react-icons/fc";
+import {FaSuitcase} from "react-icons/fa"
 import {MdWifiTetheringErrorRounded} from "react-icons/md"
 import { Link } from "react-router-dom";
 export default function Links(){
@@ -13,7 +13,7 @@ export default function Links(){
             <Link to="/about">
                 <BsFillPersonFill  className="link"/>
             </Link>
-           
+            <FaSuitcase className="link"/>
             <MdWifiTetheringErrorRounded className="link"/>
         </div>
     )

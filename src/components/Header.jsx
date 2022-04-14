@@ -40,17 +40,7 @@ export default function Header(){
 
             </svg>
              </Link>
-            {/* <div id="burger" className="hamburger" >
-              <div className="w-10 h-1 bg-red-800"></div>  
-              <div className="w-10 h-1 bg-red-800 my-2"></div>  
-              <div className="w-10 h-1 bg-red-800"></div>  
-            </div> */}
-          
-            <div className="lg:opacity-100   sm: opacity-0">
-              <Link className="mx-2 z-30 hover:text-white" to="." >Home</Link>
-              <Link className="mx-2 z-30 hover:text-white" to="/gallery">Gallery</Link>
-              <Link className="mx-2 z-30 hover:text-white" to="about">About</Link>              
-            </div>
+       
             </nav>
     </header>
 
