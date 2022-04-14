@@ -1,5 +1,6 @@
 import beardLogo from "./../images/beard.svg"
 import {Link} from "react-router-dom";
+
 export default function Header(){
 
  return(
@@ -7,7 +8,7 @@ export default function Header(){
             <nav className="app-header">
             <Link className="mx-2 w-35 z-30 h-20" to="." >
               
-            <svg className="stroke-orange-900 fill-rose-100 w-20"   version="1.1"  xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 297 297"  >
+            <svg className="logo"   version="1.1"  xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 297 297"  >
             <path d="M286.542,8.628c-5.775,0-10.457,4.683-10.457,10.457c0,0.112-0.104,11.553-3.778,22.576
               c-1.349,4.047-2.876,7.224-4.501,9.726c0.601-3.86,0.657-6.495,0.66-7.122c0.024-4.241-2.515-8.077-6.428-9.711
               c-3.911-1.637-8.427-0.745-11.425,2.256c-0.069,0.068-7.561,6.892-22.471,6.892c-6.79,0-12.217-3.618-19.088-8.199
@@ -38,16 +39,17 @@ export default function Header(){
               />
 
             </svg>
-        </Link>
-            <div id="burger" className="hamburger" >
+             </Link>
+            {/* <div id="burger" className="hamburger" >
               <div className="w-10 h-1 bg-red-800"></div>  
               <div className="w-10 h-1 bg-red-800 my-2"></div>  
               <div className="w-10 h-1 bg-red-800"></div>  
-            </div>
+            </div> */}
+          
             <div className="lg:opacity-100   sm: opacity-0">
-              <Link className="mx-2 z-30" to="." >Home</Link>
-              <Link className="mx-2 z-30" to="/gallery">Gallery</Link>
-              <Link className="mx-2 z-30" to="about">About</Link>              
+              <Link className="mx-2 z-30 hover:text-white" to="." >Home</Link>
+              <Link className="mx-2 z-30 hover:text-white" to="/gallery">Gallery</Link>
+              <Link className="mx-2 z-30 hover:text-white" to="about">About</Link>              
             </div>
             </nav>
     </header>

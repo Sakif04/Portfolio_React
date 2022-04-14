@@ -9,18 +9,27 @@
   display: none;
 }
 @layer components {
-  .app-body{
-    @apply bg-gradient-to-r from-red-600 to-orange-200 w-screen
-  }
 
-  .hamburger{
-    @apply lg:opacity-0 sm:opacity-100 absolute top-8 right-8;
+  .logo{
+    @apply stroke-amber-100 fill-red-800 w-20
   }
-  .carousel{
-    @apply w-screen bg-yellow-300 text-2xl text-orange-800;
-  }
-.app-header{
-  @apply flex font-mono text-2xl justify-between z-20 py-4 mx-auto w-4/5 px-5   text-rose-800  items-center;
+    .app-body{
+      @apply h-screen bg-gradient-to-t from-red-600 to-orange-200 w-screen 
+    }
+    .sticky-links{
+      @apply fixed left-1/2 bottom-6 flex flex-row flex-wrap backdrop-blur-2xl bg-black/20 p-1 rounded shadow-2xl;
+    }
+.link{
+  @apply text-amber-300 hover:text-white text-2xl cursor-pointer mx-1 ;
 }
+    .hamburger{
+      @apply lg:opacity-0 sm:opacity-100 absolute top-8 right-8;
+    }
+    .carousel{
+      @apply w-screen  bg-yellow-300 text-2xl text-orange-800;
+    }
+    .app-header{
+      @apply flex font-mono text-2xl justify-between z-20 py-4 mx-auto w-4/5 px-5   text-rose-800  items-center;
+    }
 }
 
