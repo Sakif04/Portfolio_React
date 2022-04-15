@@ -8,28 +8,45 @@
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+
+
 @layer components {
 
-  .logo{
-    @apply stroke-amber-100 fill-red-800 w-20
+  .app-body{
+    @apply  bg-gradient-to-t from-red-600 to-orange-200 w-screen h-screen;
   }
-    .app-body{
-      @apply h-screen bg-gradient-to-t from-red-600 to-orange-200 w-screen 
-    }
-    .sticky-links{
-      @apply fixed left-1/2 -translate-x-1/2 bottom-6 flex flex-row flex-wrap backdrop-filter backdrop-blur-lg bg-black/50 p-1 rounded shadow-2xl;
-    }
-.link{
-  @apply text-amber-300 hover:text-white text-2xl cursor-pointer mx-1 ;
-}
-    .hamburger{
-      @apply lg:opacity-0 sm:opacity-100 absolute top-8 right-8;
-    }
-    .carousel{
-      @apply w-screen  bg-yellow-300 text-2xl text-orange-800;
-    }
-    .app-header{
-      @apply flex font-mono text-2xl justify-between z-20 py-4 mx-auto w-4/5 px-5   text-rose-800  items-center;
-    }
+  .logo{
+    @apply stroke-amber-100 fill-red-800 w-20 
+  }
+    
+  .sticky-links{
+    @apply fixed left-1/2 -translate-x-1/2 bottom-6 flex flex-row flex-wrap   backdrop-filter backdrop-blur-lg bg-black/50 p-2 rounded shadow-2xl;
+  }
+
+  .hero-box{
+    @apply bg-pink-900 h-full w-48 mx-auto;
+    border-radius:12rem 10rem 0 0;
+  }
+  .link{
+    @apply text-amber-300 rounded-lg cursor-pointer w-8 h-full mx-1 p-1 hover:text-white text-2xl hover:bg-red-900/80;
+  }
+
+  .contacts{
+   @apply absolute bottom-0.5 left-1/4 border-l-2 border-red-400;
+  }
+  .contact-link{
+    @apply text-amber-300 rounded-lg w-20 h-10 cursor-pointer mx-1 p-1 hover:text-white text-2xl hover:bg-red-900/80;
+  }
+  .hamburger{
+    @apply lg:opacity-0 sm:opacity-100 absolute top-8 right-8;
+  }
+  .carousel{
+    @apply w-screen  bg-yellow-300 text-2xl text-orange-800;
+  }
+  
+  .app-header{
+    @apply flex font-mono text-2xl justify-start z-20 py-4 mx-auto w-4/5 px-5 text-rose-800  items-center;
+  }
 }
 
