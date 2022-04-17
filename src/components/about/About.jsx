@@ -1,6 +1,7 @@
 export default function About(){
 
-    return(
-        <h1 className="text-2xl my-4 text-center"> About Page</h1>
+    return(<>
+        <h1 className="about"> About Me</h1>
+        </>
     )
 }

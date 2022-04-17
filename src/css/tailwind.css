@@ -16,7 +16,7 @@
   }
   
 }
-@media (max-width:600px) {
+@media (max-width:650px) {
   html{
     font-size: 9px;
   }
@@ -36,7 +36,7 @@
     @apply md:text-xs sm:text-xs;
   }
   .hero-img{
-    animation: bounce infinite 3s ease-in-out;
+    animation: bounce infinite 2s cubic-bezier(0.45, 0.45, 1, 1);
     @apply z-10 w-full;
   }
   .hero-box{
@@ -44,11 +44,11 @@
     border-radius:12rem 10rem 0 0;
   }
   .link{
-    @apply text-amber-300 rounded-lg cursor-pointer w-8 h-full mx-1 p-1 hover:text-white text-2xl hover:bg-red-900/80;
+    @apply text-amber-300 rounded-lg cursor-pointer w-8 h-full mx-1 p-1 hover:text-white text-2xl hover:bg-amber-900;
   }
 
   .contacts{
-   @apply absolute bottom-0.5 lg:left-1/4 border-l-2 border-red-400 ml-5;
+   @apply absolute bottom-5 lg:left-1/4 border-l-2 border-red-400 ml-5;
    @apply md:text-xs sm:text-xs sm:left-20;
   }
   .contact-link{
@@ -63,6 +63,9 @@
   
   .app-header{
     @apply flex font-mono text-2xl justify-start z-20 py-4 mx-auto w-4/5 px-5 text-rose-800  items-center;
+  }
+  .about{
+    @apply text-3xl my-4 text-center text-purple-800;
   }
 }
 
