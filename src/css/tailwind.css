@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .scrollbar-none {
   scrollbar-width: none;
 }
@@ -9,23 +10,37 @@
   display: none;
 }
 
-
-
+@media (max-width:400px) {
+  html{
+    font-size: 7px;
+  }
+  
+}
+@media (max-width:600px) {
+  html{
+    font-size: 9px;
+  }
+  
+}
 @layer components {
-
   .app-body{
-    @apply  bg-gradient-to-t from-red-600 to-orange-200 w-screen h-screen;
+    @apply  bg-gradient-to-t from-red-600 to-orange-200 w-screen h-screen pb-20 pl-5;
   }
   .logo{
     @apply stroke-amber-100 fill-red-800 w-20 
   }
     
   .sticky-links{
-    @apply fixed left-1/2 -translate-x-1/2 bottom-6 flex flex-row flex-wrap   backdrop-filter backdrop-blur-lg bg-black/50 p-2 rounded shadow-2xl;
+    @apply z-30;
+    @apply fixed left-1/2 -translate-x-1/2 bottom-10 flex flex-row flex-wrap   backdrop-filter backdrop-blur-lg bg-black/50 p-2 rounded shadow-2xl;
+    @apply md:text-xs sm:text-xs;
   }
-
+  .hero-img{
+    animation: bounce infinite 3s ease-in-out;
+    @apply z-10 w-full;
+  }
   .hero-box{
-    @apply bg-pink-900 h-full w-48 mx-auto;
+    @apply bg-pink-900 h-full w-48 mx-auto flex justify-center;
     border-radius:12rem 10rem 0 0;
   }
   .link{
@@ -33,7 +48,8 @@
   }
 
   .contacts{
-   @apply absolute bottom-0.5 left-1/4 border-l-2 border-red-400;
+   @apply absolute bottom-0.5 lg:left-1/4 border-l-2 border-red-400 ml-5;
+   @apply md:text-xs sm:text-xs sm:left-20;
   }
   .contact-link{
     @apply text-amber-300 rounded-lg w-20 h-10 cursor-pointer mx-1 p-1 hover:text-white text-2xl hover:bg-red-900/80;
@@ -50,3 +66,23 @@
   }
 }
 
+@keyframes bounce{
+  0%{ 
+    transform: translateY(-5%);
+  }
+  30%{ 
+    transform: translateY(-3%);
+  }
+
+  50%{
+    transform: translateY(0%);
+  }
+  80%{
+    transform: translateY(-3%);
+
+  }
+  100%{ 
+    transform: translateY(-5%);
+  }
+  
+}

@@ -4,7 +4,7 @@ export default function Hero(){
     return(
         <>
         <div className="hero-box">
-            <img src={heroImg} alt="" srcSet="" className="w-full " />
+            <img className="hero-img" src={heroImg} alt="" srcSet=""  />
         </div>
         </>
     )
