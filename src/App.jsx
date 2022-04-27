@@ -1,8 +1,8 @@
 
 import Gallery from "./components/Gallery";
-import Home from "./components/home/Home";
+import Home from "./pages/home/Home";
 import Header from "./components/Header";
-import About from "./components/about/About";
+import About from "./pages/about/About";
 import Links from "./components/Links";
 import {
   BrowserRouter as Router,

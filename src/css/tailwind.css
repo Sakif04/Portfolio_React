@@ -23,6 +23,7 @@
   
 }
 @layer components {
+  
   .app-body{
     @apply  bg-gradient-to-t from-red-600 to-orange-200 w-screen h-screen pb-20 pl-5;
   }
@@ -36,11 +37,12 @@
     @apply md:text-xs sm:text-xs;
   }
   .hero-img{
-    animation: bounce infinite 2s cubic-bezier(0.45, 0.45, 1, 1);
+    /* animation: bounce infinite 2s cubic-bezier(0.45, 0.45, 1, 1); */
     @apply z-10 w-full;
   }
   .hero-box{
-    @apply bg-pink-900 h-full w-48 mx-auto flex justify-center;
+    @apply bg-pink-900 h-full w-48 mx-auto flex justify-center relative;
+    @apply before:bg-amber-800 after:bg-amber-900/80;
     border-radius:12rem 10rem 0 0;
   }
   .link{
@@ -62,7 +64,7 @@
   }
   
   .app-header{
-    @apply flex font-mono text-2xl justify-start z-20 py-4 mx-auto w-4/5 px-5 text-rose-800  items-center;
+    @apply flex font-mono text-2xl justify-start z-20 py-4 mx-auto w-4/5 px-5 fill-slate-500 items-center;
   }
   .about{
     @apply text-3xl my-4 text-center text-purple-800;
