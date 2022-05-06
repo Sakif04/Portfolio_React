@@ -25,10 +25,10 @@
 @layer components {
   
   .app-body{
-    @apply  bg-gradient-to-t from-red-600 to-orange-200 w-screen h-screen pb-20 pl-5;
+    @apply  bg-gradient-to-t from-red-600 to-orange-200 h-full ;
   }
   .logo{
-    @apply stroke-amber-100 fill-red-800 w-20 
+    @apply stroke-amber-100 fill-red-800 w-20 justify-center;
   }
     
   .sticky-links{
@@ -48,26 +48,40 @@
   .link{
     @apply text-amber-300 rounded-lg cursor-pointer w-8 h-full mx-1 p-1 hover:text-white text-2xl hover:bg-amber-900;
   }
-
+  .skills{
+    @apply mx-auto w-3/4 text-slate-50 mt-24 ;
+  }
+  .skill-section{
+  @apply flex flex-wrap justify-center;  
+  }
+  .skill{
+    @apply mx-3 w-28 bg-slate-900 flex items-center flex-col rounded-md my-10;
+    @apply hover:scale-125
+  }
+  .skill-logo{
+    @apply text-5xl text-center my-2;
+  }
   .contacts{
-   @apply absolute bottom-5 lg:left-1/4 border-l-2 border-red-400 ml-5;
+   @apply w-20 relative lg:left-1/4 border-l-2 border-red-900 ml-5 -mt-32;
    @apply md:text-xs sm:text-xs sm:left-20;
   }
   .contact-link{
-    @apply text-amber-300 rounded-lg w-20 h-10 cursor-pointer mx-1 p-1 hover:text-white text-2xl hover:bg-red-900/80;
+    @apply text-amber-800 rounded-lg w-20 h-10 cursor-pointer mx-1 p-1 hover:text-white text-2xl hover:bg-red-900/80;
   }
   .hamburger{
     @apply lg:opacity-0 sm:opacity-100 absolute top-8 right-8;
   }
   .carousel{
-    @apply w-screen  bg-yellow-300 text-2xl text-orange-800;
+    @apply w-screen bg-yellow-300 text-2xl text-orange-800;
   }
-  
+  .about-section{
+    @apply mx-auto w-3/4 text-slate-200 text-lg mt-8;
+  }
   .app-header{
-    @apply flex font-mono text-2xl justify-start z-20 py-4 mx-auto w-4/5 px-5 fill-slate-500 items-center;
+    @apply flex font-mono text-2xl justify-center z-20 py-4 mx-auto w-4/5 px-5 fill-slate-200 items-center;
   }
   .about{
-    @apply text-3xl my-4 text-center text-purple-800;
+    @apply text-3xl mt-20 text-center text-yellow-300 ;
   }
 }
 
