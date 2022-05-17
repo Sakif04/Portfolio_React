@@ -1,28 +1,35 @@
 import React from 'react'
 import Skill from './Skill';
-import {FaPython} from 'react-icons/fa';
-import {SiJavascript} from 'react-icons/si';
-import {FaHtml5} from 'react-icons/fa';
+import {FaHtml5,FaPython, FaReact,FaRegFilePowerpoint} from 'react-icons/fa';
+
+
 import {IoLogoCss3} from 'react-icons/io';
-import {BsBootstrapFill} from 'react-icons/bs';
-import {SiTailwindcss} from 'react-icons/si';
-import {SiPandas} from 'react-icons/si';
+import {SiJavascript,SiRedux} from 'react-icons/si';
+import {AiOutlineFileWord,AiOutlineFileExcel} from 'react-icons/ai';
+
 
 export default function Skills() {
 
   return (
     <div className='skills'>
-        <h1 className="text-3xl text-yellow-300 font-semibold my-auto text-center">Skills</h1>
-        <h1 className="text-lg text-center text-yellow-300 ">Programming Languages, Libraries & Frameworks</h1>
+        <h1 className="text-3xl text-pink-200 font-semibold my-auto text-center">Skills</h1>
+        <h1 className="text-lg text-center text-pink-200 font-thick">Programming Languages, Libraries & Frameworks</h1>
         <div className="skill-section">
-            <Skill skill='Python' logo={<FaPython />} color='purple' />
+            
             <Skill skill='Javascript' logo={<SiJavascript/>} color='yellow' />
+            <Skill skill='Python' logo={<FaPython/>} color='#4B8BBE'/>
+            <Skill skill='React' logo={<FaReact/>} color='#61dbfb'/>
+            <Skill skill='Redux' logo={<SiRedux/>} color='#61dbfb'/>
             <Skill skill='HTML' logo={<FaHtml5/>} color='#ff9900'/>
             <Skill skill='CSS' logo={<IoLogoCss3/>} color='#264de4'/>
-            <Skill skill='Bootstrap' logo={<BsBootstrapFill/>} color='#e035e6'/>
-            <Skill skill='TailwindCSS' logo={<SiTailwindcss/>} color='skyblue'/>
-            <Skill skill='Pandas' logo={<SiPandas/>} color='#ffffff'/>
             
+            
+        </div>
+        <h1 className="text-lg text-center text-pink-200 text-bold "> Softwares</h1>
+        <div className="skill-section">
+          <Skill skill='MS Word' logo={<AiOutlineFileWord/>} color='#299fe6'/>
+          <Skill skill='MS Powerpoint' logo={<FaRegFilePowerpoint/> } color='#FFA500'/>
+          <Skill skill='MS Excel' logo={< AiOutlineFileExcel/>} color='lime' />
         </div>
 
 
