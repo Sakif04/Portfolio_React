@@ -1,8 +1,7 @@
 import {BsHouseDoor} from "react-icons/bs";
-import {BsFillPersonFill} from "react-icons/bs";import {FcFlashOn} from "react-icons/fc";
-import {FiGithub} from "react-icons/fi";
-import {FaSuitcase} from "react-icons/fa"
-import {MdWifiTetheringErrorRounded} from "react-icons/md"
+import {BsFillPersonFill} from "react-icons/bs";
+import {FaGraduationCap} from "react-icons/fa";
+import {AiOutlineFileDone} from 'react-icons/ai';
 
 export default function Links(){
 
@@ -15,13 +14,13 @@ export default function Links(){
                 <BsFillPersonFill  className="link" />
             </a>
 
-            
-           <a href="#">
-            <FaSuitcase  className="link" />   
-           </a>
-            <a href="#">
-                <MdWifiTetheringErrorRounded className="link"/>
+            <a href="education" className="link">
+                <FaGraduationCap/>
             </a>
+           <a href="projects">
+            <AiOutlineFileDone  className="link" />   
+           </a>
+         
             
         </div>
     )

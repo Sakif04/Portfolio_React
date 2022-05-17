@@ -1,12 +1,13 @@
 
-
-import Home from "./parts/home/Home";
+import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
+import Home from "./pages/home/Home";
 import Header from "./components/Header";
-import About from "./parts/about/About";
+import About from "./components/about/About";
 import Links from "./components/Links";
 
 
 import "./css/tailwind.css"
+
 
 function App() {
   
@@ -14,17 +15,20 @@ function App() {
   return (
     <div className="app-body">
       <div className="z-10 font-sans ">
-    
-    
         
-        <Header />
-        <Home />
-        <About />
-
+        
         
         <Links />
-        
-    
+        <Router>
+            <Routes>
+
+              <Route path='/'  element={<Home/>}/>
+              {/* <Route path='Education'  element={<Home/>}/> */}
+
+              
+            </Routes>
+
+        </Router>
       </div>
     </div>
   )
