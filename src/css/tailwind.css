@@ -27,7 +27,13 @@
   .header{
     @apply text-3xl mt-10 text-center text-pink-200;
   }
+<<<<<<< HEAD
  
+=======
+  .education{
+    @apply mt-1;
+  }
+>>>>>>> 3bcff24d97b9dc4ae33bdd08ac8d60e46c5fdc74
   
   .app-body{
     @apply  bg-gradient-to-t from-red-600 to-orange-200 h-full ;
@@ -80,11 +86,16 @@
     @apply w-screen bg-yellow-300 text-2xl text-orange-800;
   }
   .about-section{
+
     @apply mx-6 w-2/5 text-red-100 text-lg mt-5 ;
+
+    @apply mx-auto w-3/5 text-slate-200 text-lg mt-8;
+
   }
   .section-about{
     @apply flex-row ml-32 relative flex justify-center mt-12;
   }
+
   .about-image{
     @apply w-48 h-60 mx-6 fill-rose-900;
 
@@ -93,5 +104,9 @@
     @apply flex font-mono text-2xl justify-center z-20 py-4 mx-auto w-4/5 px-5 fill-slate-200 items-center;
   }
 }
+
+
+
+
 
   

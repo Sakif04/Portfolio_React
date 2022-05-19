@@ -14,10 +14,17 @@ export default function Links(){
                 <BsFillPersonFill  className="link" />
             </a>
 
+
             <a href="education" className="link">
                 <FaGraduationCap/>
             </a>
-           <a href="projects">
+           
+
+            <a href="#education" className="link">
+                <FaGraduationCap/>
+            </a>
+           <a href="#projects">
+
             <AiOutlineFileDone  className="link" />   
            </a>
          
