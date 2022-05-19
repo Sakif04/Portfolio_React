@@ -1,22 +1,34 @@
 import {BsHouseDoor} from "react-icons/bs";
-import {BsFillPersonFill} from "react-icons/bs";import {FcFlashOn} from "react-icons/fc";
-import {FiGithub} from "react-icons/fi";
-import {FaSuitcase} from "react-icons/fa"
-import {MdWifiTetheringErrorRounded} from "react-icons/md"
-import { Link } from "react-router-dom";
+import {BsFillPersonFill} from "react-icons/bs";
+import {FaGraduationCap} from "react-icons/fa";
+import {AiOutlineFileDone} from 'react-icons/ai';
+
 export default function Links(){
 
     return (
         <div className="sticky-links">
-            <Link to="." >
+            <a href="#hero" >
                 <BsHouseDoor className="link" />
-            </Link>
-            <Link to="/about">
-                <BsFillPersonFill  className="link"/>
-            </Link>
+            </a>
+            <a href="#about">
+                <BsFillPersonFill  className="link" />
+            </a>
+
+
+            <a href="education" className="link">
+                <FaGraduationCap/>
+            </a>
            
-            <FaSuitcase className="link"/>
-            <MdWifiTetheringErrorRounded className="link"/>
+
+            <a href="#education" className="link">
+                <FaGraduationCap/>
+            </a>
+           <a href="#projects">
+
+            <AiOutlineFileDone  className="link" />   
+           </a>
+         
+            
         </div>
     )
 }

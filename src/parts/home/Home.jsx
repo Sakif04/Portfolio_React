@@ -1,6 +1,5 @@
 import Hero from "./Hero";
 import Contacts from "./contacts";
-import About from '../../components/about/About';
 import { animated,useSpring } from "react-spring";
 export default function Home(){
     const style= useSpring({
@@ -22,7 +21,6 @@ export default function Home(){
             
             <Hero />
             <Contacts />
-            <About />
 
         </div>
     )
