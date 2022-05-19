@@ -2,10 +2,7 @@
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 import Home from "./pages/home/Home";
 import Header from "./components/Header";
-import About from "./components/about/About";
 
-import Education from "./parts/about/Education";
-import About from "./parts/about/About";
 
 import Links from "./components/Links";
 
@@ -37,7 +34,7 @@ function App() {
 
         <Header />
         <Home />
-        <About />
+        
         <Links />
 
       </div>

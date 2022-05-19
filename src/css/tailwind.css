@@ -27,13 +27,13 @@
   .header{
     @apply text-3xl mt-10 text-center text-pink-200;
   }
-<<<<<<< HEAD
+
  
-=======
+
   .education{
     @apply mt-1;
   }
->>>>>>> 3bcff24d97b9dc4ae33bdd08ac8d60e46c5fdc74
+
   
   .app-body{
     @apply  bg-gradient-to-t from-red-600 to-orange-200 h-full ;
