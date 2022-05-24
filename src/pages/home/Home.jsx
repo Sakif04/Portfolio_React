@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import Contacts from "./contacts";
+import Contacts from "./Contacts";
 import About from '../about/About';
 import { animated,useSpring } from "react-spring";
 export default function Home(){
