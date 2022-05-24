@@ -1,9 +1,9 @@
-import Skills from "./Skills";
+import Skills from "../../components/about/Skills";
 import img from "../../images/about.jpg";
 export default function About(){
 
     return(<>
-        <h1 className="about header" id="about"> About Me</h1>
+        <h1 className="about-header" id="about"> About Me</h1>
         <div className="section-about">
         <svg className="about-image"   version="1.1"  xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 297 297"  >
             <path d="M286.542,8.628c-5.775,0-10.457,4.683-10.457,10.457c0,0.112-0.104,11.553-3.778,22.576

@@ -1,6 +1,6 @@
 import Hero from "./Hero";
 import Contacts from "./contacts";
-import About from '../../components/about/About';
+import About from '../about/About';
 import { animated,useSpring } from "react-spring";
 export default function Home(){
     const style= useSpring({
@@ -16,13 +16,13 @@ export default function Home(){
         to:  { x: 0  }
       })
     return(
-        <div id="hero"  className="min-w-fit  h-full">
+        <div id="hero"  className="home">
            <animated.h2 style={style} className="text-center text-4xl text-purple-900">Hello</animated.h2>
             <animated.h1 style={style2} className='text-center my-2 text-2xl bg-red text-green-100'> I am <br />Sakif <span className="text-red-900" > Rafid</span></animated.h1>
             
             <Hero />
             <Contacts />
-            <About />
+            
 
         </div>
     )

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {BsHouseDoor} from "react-icons/bs";
 import {BsFillPersonFill} from "react-icons/bs";
 import {FaGraduationCap} from "react-icons/fa";
@@ -7,26 +8,22 @@ export default function Links(){
 
     return (
         <div className="sticky-links">
-            <a href="#hero" >
+            <Link to='/'>
                 <BsHouseDoor className="link" />
-            </a>
-            <a href="#about">
+            </Link>
+            
+            <Link to= 'about'>
                 <BsFillPersonFill  className="link" />
-            </a>
+            </Link>
 
 
-            <a href="education" className="link">
-                <FaGraduationCap/>
-            </a>
+            < Link to="education" >
+                <FaGraduationCap className="link"/>
+            </Link>
            
-
-            <a href="#education" className="link">
-                <FaGraduationCap/>
-            </a>
-           <a href="#projects">
-
-            <AiOutlineFileDone  className="link" />   
-           </a>
+           <Link to="projects">
+                <AiOutlineFileDone  className="link" />   
+           </Link>
          
             
         </div>
