@@ -1,4 +1,4 @@
-import Skills from "../../components/about/Skills";
+import Skills from "./Skills";
 import img from "../../images/about.jpg";
 export default function About(){
 

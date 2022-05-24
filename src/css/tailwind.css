@@ -58,7 +58,10 @@
     @apply md:text-xs sm:text-xs;
   }
   .home{
-    @apply min-w-fit  h-screen;
+    @apply min-w-fit  h-screen pt-3;
+  }
+  .projects_header{
+    @apply text-2xl text-amber-900 text-center;
   }
   .hero-img{
     /* animation: bounce infinite 2s cubic-bezier(0.45, 0.45, 1, 1); */

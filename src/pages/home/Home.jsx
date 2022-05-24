@@ -18,7 +18,7 @@ export default function Home(){
     return(
         <div id="hero"  className="home">
            <animated.h2 style={style} className="text-center text-4xl text-purple-900">Hello</animated.h2>
-            <animated.h1 style={style2} className='text-center my-2 text-2xl bg-red text-green-100'> I am <br />Sakif <span className="text-red-900" > Rafid</span></animated.h1>
+            <animated.h1 style={style2} className='text-center my-2 text-2xl bg-red text-amber-800'> I am <br />Sakif <span className="text-red-900" > Rafid</span></animated.h1>
             
             <Hero />
             <Contacts />

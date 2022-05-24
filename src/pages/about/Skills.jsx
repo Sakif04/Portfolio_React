@@ -1,5 +1,5 @@
 import React from 'react'
-import Skill from '../../pages/about/Skill';
+import Skill from './Skill';
 import {FaHtml5,FaPython, FaReact,FaRegFilePowerpoint} from 'react-icons/fa';
 
 
