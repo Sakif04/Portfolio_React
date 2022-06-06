@@ -69,9 +69,11 @@
     @apply z-10 w-full;
   }
   .hero-box{
-    @apply bg-red-500 md:h-4/5 w-48 mx-auto flex justify-center relative;
+    @apply bg-red-500 mt-24 h-1/5 sm:h-fit sm:w-24 w-1/5 mx-auto flex justify-center relative;
     @apply before:bg-amber-800 after:bg-amber-900/80;
-    @apply lg:h-3/5 mt-12;
+    @apply lg:h-96 lg:w-1/5  ;
+    @apply  md:w-1/6 ;
+
     border-radius:12rem 10rem 0 0;
   }
   .link{
@@ -91,8 +93,8 @@
     @apply text-5xl text-center my-2;
   }
   .contacts{
-   @apply w-20 relative left-1 border-l-2 border-red-900 ml-5 -mt-32 sm:left-28;
-   @apply md:text-xs sm:text-xs sm:left-20 md:left-12;
+   @apply w-20 relative left-12 border-l-2 border-red-900 ml-5 -mt-32 sm:left-28;
+   @apply md:text-xs sm:text-xs sm:left-20 md:left-1;
    
   }
   .contact-link{
