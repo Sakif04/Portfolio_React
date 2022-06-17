@@ -62,17 +62,38 @@
     @apply min-w-fit  h-screen pt-3;
   }
   .projects_header{
+    @apply pt-5;
+  }
+  .projects{
+    @apply mt-10;
+  }
+  .project{
+    @apply mx-8;
+  }
+  .project_name{
+    @apply text-center mt-4;
+  }
+  .projects_header{
     @apply text-2xl text-amber-900 text-center;
   }
   .hero-img{
     /* animation: bounce infinite 2s cubic-bezier(0.45, 0.45, 1, 1); */
     @apply z-10 w-full;
   }
+  .link.active-link{
+    @apply text-amber-800 bg-teal-200;
+  }
+  .card{
+    @apply max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-white
+  }
   .hero-box{
-    @apply bg-red-500 mt-24 h-1/5 sm:h-fit sm:w-24 w-1/5 mx-auto flex justify-center relative;
+    @apply bg-red-500 mt-24  mx-auto flex justify-center relative;
     @apply before:bg-amber-800 after:bg-amber-900/80;
-    @apply lg:h-96 lg:w-1/5  ;
-    @apply  md:w-1/6 ;
+    height:24rem;
+    width:10rem;
+    /* @apply sm:h-4/5  sm:w-16 ;
+    @apply lg:h-5/6 lg:w-1/12 ;
+    @apply md:w-1/12 md:h-2/6; */
 
     border-radius:12rem 10rem 0 0;
   }
