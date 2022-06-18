@@ -84,17 +84,13 @@
     @apply text-amber-800 bg-teal-200;
   }
   .card{
-    @apply max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-white
+    @apply max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-white;
   }
   .hero-box{
     @apply bg-red-500 mt-24  mx-auto flex justify-center relative;
     @apply before:bg-amber-800 after:bg-amber-900/80;
     height:24rem;
     width:10rem;
-    /* @apply sm:h-4/5  sm:w-16 ;
-    @apply lg:h-5/6 lg:w-1/12 ;
-    @apply md:w-1/12 md:h-2/6; */
-
     border-radius:12rem 10rem 0 0;
   }
   .link{
