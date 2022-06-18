@@ -1,7 +1,7 @@
 import React from 'react';
 import {AiOutlineEye} from 'react-icons/ai';
 import {FiGithub} from 'react-icons/fi';
-import quiz from '../../images/projects_img/quiz_1.png';
+import quiz from '../../../images/projects_img/quiz_1.png';
 
 function Projects() {
   return (
