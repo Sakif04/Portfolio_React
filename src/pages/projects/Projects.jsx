@@ -1,25 +1,23 @@
 import React from 'react';
-import {AiOutlineEye} from 'react-icons/ai';
-import {FiGithub} from 'react-icons/fi';
-import quiz from '../../images/projects_img/quiz.png';
+import noteImg from '../../images/projects_img/Note_img.png'
+import quizImg from '../../images/projects_img/quiz.png';
+import Project from './Project';
 
 function Projects() {
   return (
-  <>  
+    
+  <>
     <h1 className="projects_header"> Projects</h1>
     <div className='projects' id='projects'>
-      <div className="project card">
-        
-        <h1 className="project_name">
-          Quiz App
-        </h1>
-        <img src={quiz} alt="Quiz App"  />
-        <div className="flex justify-center">
-          <a href="https://github.com/Sakif04/Quiz_App/"> <FiGithub  className='link'/></a>
-          <a href="https://sakifsquizapp.netlify.app/"> <AiOutlineEye className='link'/></a>
-        </div>
-      </div>
-
+      <Project gitLink={"https://github.com/Sakif04/Quiz_App/"} 
+        prevLink={"https://sakifsquizapp.netlify.app/"}  
+        imgLink={quizImg} />
+      <Project 
+        imgLink={noteImg}
+        gitLink="https://github.com/Sakif04/React_Note" 
+        prevLink="https://saksnotes.netlify.app/"
+      />
+    
     </div>
   </>
   )
