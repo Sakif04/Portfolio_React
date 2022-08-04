@@ -94,7 +94,7 @@
     border-radius:12rem 10rem 0 0;
   }
   .link{
-    @apply text-amber-300 rounded-lg cursor-pointer w-8 h-full mx-1 p-1 hover:text-white text-2xl hover:bg-amber-900;
+    @apply text-amber-500 rounded-lg cursor-pointer w-8 h-full mx-1 p-1 hover:text-white text-2xl hover:bg-amber-900;
   }
   .skills{
     @apply mx-auto w-3/4 text-slate-50 mt-10 ;
