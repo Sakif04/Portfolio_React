@@ -5,7 +5,6 @@ import Project from './Project';
 
 function Projects() {
   return (
-
   <>
     <h1 className="projects_header"> Projects</h1>
     <div className='projects' id='projects'>

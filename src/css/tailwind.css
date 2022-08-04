@@ -13,22 +13,21 @@
 @media (max-width:400px) {
   html{
     font-size: 7px;
-  }
-  
+  } 
 }
 @media (max-width:650px) {
   html{
     font-size: 9px;
   }
-  
 }
+
 @layer components {
-  
+  body{
+    @apply bg-gradient-to-t from-red-600 to-orange-200  h-[100%];
+  }
   .header{
     @apply text-3xl pt-10 text-center text-pink-200;
   }
-
- 
   .edu-header{
     @apply mx-auto text-center text-3xl ;
   }
@@ -40,14 +39,11 @@
   }
   .edu-item{
     @apply  shadow-slate-900 shadow-sm m-2 p-2 text-center justify-center flex text-amber-900 flex-col items-center;
-    
-
   }
 
-  
-  .app-body{
-    @apply  bg-gradient-to-t from-red-600 to-orange-200 h-screen;
-  }
+  /* .app-body{
+    @apply  bg-gradient-to-t from-red-600 to-orange-200  h-[100%];
+  } */
   .logo{
     @apply stroke-amber-100 fill-red-800 w-20 justify-center;
   }
@@ -65,10 +61,10 @@
     @apply pt-5;
   }
   .projects{
-    @apply mt-10 flex;
+    @apply mt-10 flex h-screen;
   }
   .project{
-    @apply mx-8 p-4;
+    @apply mx-8 p-4 h-[20rem];
   }
   .project_name{
     @apply text-center mt-4 text-red-900 text-lg font-semibold pb-2;
