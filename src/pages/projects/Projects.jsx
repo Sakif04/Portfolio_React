@@ -16,12 +16,8 @@ function Projects() {
         gitLink="https://github.com/Sakif04/React_Note" 
         prevLink="https://saksnotes.netlify.app/"
       />
-      
-
-    
     </div>
   </>
   )
 }
-
 export default Projects
