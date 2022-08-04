@@ -5,6 +5,7 @@ import Project from './Project';
 
 function Projects() {
   return (
+
   <>
     <h1 className="projects_header"> Projects</h1>
     <div className='projects' id='projects'>
@@ -16,6 +17,7 @@ function Projects() {
         gitLink="https://github.com/Sakif04/React_Note" 
         prevLink="https://saksnotes.netlify.app/"
       />
+
     </div>
   </>
   )

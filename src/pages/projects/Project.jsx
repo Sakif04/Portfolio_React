@@ -4,8 +4,6 @@ import {FiGithub} from 'react-icons/fi';
 
 export default function Project({gitLink,prevLink,imgLink}){
 
-
-
     return(
     <div className="project card">
         <h1 className="project_name">
