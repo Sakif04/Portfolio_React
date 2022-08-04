@@ -46,7 +46,7 @@
 
   
   .app-body{
-    @apply  bg-gradient-to-t from-red-600 to-orange-200 ;
+    @apply  bg-gradient-to-t from-red-600 to-orange-200 h-screen;
   }
   .logo{
     @apply stroke-amber-100 fill-red-800 w-20 justify-center;
@@ -71,7 +71,7 @@
     @apply mx-8 p-4;
   }
   .project_name{
-    @apply text-center mt-4;
+    @apply text-center mt-4 text-red-900 text-lg font-semibold pb-2;
   }
   .projects_header{
     @apply text-2xl text-amber-900 text-center;
