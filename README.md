@@ -1,5 +1,5 @@
 # Portfolio Site made with React
-Go to the link of the portfolio [Preview link](https://sakif04.netlify.app/)
+Go to the link of the portfolio [Preview Link](https://sakif04.netlify.app/)
 
 ## Attributes of the WebApp
 1. used React Router to create different pages

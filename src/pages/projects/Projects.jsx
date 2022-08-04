@@ -9,10 +9,12 @@ function Projects() {
   <>
     <h1 className="projects_header"> Projects</h1>
     <div className='projects' id='projects'>
-      <Project imgLink={quizImg}
-      gitLink={"https://github.com/Sakif04/Quiz_App/"} 
+      <Project title="Quiz App"
+        imgLink={quizImg}
+        gitLink={"https://github.com/Sakif04/Quiz_App/"} 
         prevLink={"https://sakifsquizapp.netlify.app/"}  />
       <Project 
+      title="Note app"
         imgLink={noteImg}
         gitLink="https://github.com/Sakif04/React_Note" 
         prevLink="https://saksnotes.netlify.app/"
