@@ -15,6 +15,5 @@ export default function Project({gitLink,prevLink,imgLink}){
           <a href={prevLink}> <AiOutlineEye className='link'/></a>
         </div>
       </div>
- 
     )
 }

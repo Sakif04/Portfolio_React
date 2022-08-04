@@ -68,7 +68,7 @@
     @apply mt-10 flex;
   }
   .project{
-    @apply mx-8;
+    @apply mx-8 p-4;
   }
   .project_name{
     @apply text-center mt-4;
@@ -84,8 +84,9 @@
     @apply text-amber-800 bg-teal-200;
   }
   .card{
-    @apply max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-white;
+    @apply p-6 max-w-sm bg-white rounded-md border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-white;
   }
+
   .hero-box{
     @apply bg-red-500 mt-24  mx-auto flex justify-center relative;
     @apply before:bg-amber-800 after:bg-amber-900/80;
