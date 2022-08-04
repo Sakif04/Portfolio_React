@@ -65,7 +65,7 @@
     @apply pt-5;
   }
   .projects{
-    @apply mt-10;
+    @apply mt-10 flex;
   }
   .project{
     @apply mx-8;
